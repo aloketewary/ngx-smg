@@ -1,1 +1,1 @@
-{"format":"yml","location":"./src/swagger","output":"./swagger/generated/models"}
+{"format":"json","location":"./smg-test/swagger","output":"./smg-test/swagger/genearted/models"}
