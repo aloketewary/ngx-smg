@@ -1,7 +1,7 @@
 {
   "name": "ngx-smg",
   "description": "Angular X Swagger Model Generator ",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Aloke Tewary",
   "bin": {
     "ngx-smg": "./bin/run"
