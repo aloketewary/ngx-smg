@@ -1,12 +1,12 @@
 {
   "name": "ngx-smg",
-  "description": "Angular X Swagger Model Generator ",
+  "description": "Angular X / Typescript Swagger Model Generator ",
   "version": "0.1.1",
   "author": "Aloke Tewary",
   "bin": {
     "ngx-smg": "./bin/run"
   },
-  "bugs": "https://github.com/NgxSMG/ngx-smg/issues",
+  "bugs": "https://github.com/aloketewary/ngx-smg/issues",
   "dependencies": {
     "@oclif/command": "^1.5.15",
     "@oclif/config": "^1.13.0",
@@ -51,9 +51,16 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/NgxSMG/ngx-smg",
+  "homepage": "https://github.com/aloketewary/ngx-smg",
   "keywords": [
-    "oclif"
+    "smg",
+    "Swagger",
+    "model",
+    "generator",
+    "Swagger Model Generator",
+    "Typescript Swagger Model Generator",
+    "Typescript",
+    "Angular"
   ],
   "license": "MIT",
   "main": "lib/index.js",
@@ -64,7 +71,7 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "NgxSMG/ngx-smg",
+  "repository": "aloketewary/ngx-smg",
   "scripts": {
     "postpack": "rimraf oclif.manifest.json",
     "posttest": "tslint -p test -t stylish",
