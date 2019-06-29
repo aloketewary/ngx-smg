@@ -21,7 +21,7 @@ $ npm install -g ngx-smg
 $ ngx-smg COMMAND
 running command...
 $ ngx-smg (-v|--version|version)
-ngx-smg/0.1.4 win32-x64 node-v10.16.0
+ngx-smg/1.0.0 win32-x64 node-v10.16.0
 $ ngx-smg --help [COMMAND]
 USAGE
   $ ngx-smg COMMAND
@@ -52,7 +52,7 @@ OPTIONS
   -h, --help               show CLI help
 ```
 
-_See code: [src\commands\config.ts](https://github.com/aloketewary/ngx-smg/blob/v0.1.4/src\commands\config.ts)_
+_See code: [src\commands\config.ts](https://github.com/aloketewary/ngx-smg/blob/v1.0.0/src\commands\config.ts)_
 
 ## `ngx-smg help [COMMAND]`
 
@@ -80,9 +80,11 @@ USAGE
   $ ngx-smg run [FILE]
 
 OPTIONS
+  -M, --model    Model Generation Flag
+  -S, --service  Service Generation Flag
   -f, --force
-  -h, --help   show CLI help
+  -h, --help     show CLI help
 ```
 
-_See code: [src\commands\run.ts](https://github.com/aloketewary/ngx-smg/blob/v0.1.4/src\commands\run.ts)_
+_See code: [src\commands\run.ts](https://github.com/aloketewary/ngx-smg/blob/v1.0.0/src\commands\run.ts)_
 <!-- commandsstop -->
