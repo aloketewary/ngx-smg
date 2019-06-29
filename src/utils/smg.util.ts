@@ -45,3 +45,37 @@ export function getImportsType(propertyType: PropertyTypeObj): string {
   }
   return rtrnType
 }
+
+
+export function getServiceType(propertyType: string, schema: string | undefined): string {
+  // console.log(JSON.stringify(propertyType))
+  let rtrnType: string
+  switch (propertyType) {
+    case 'array':
+      rtrnType = schema ? `${titleCase(schema)}[]` : 'any[]'
+      break
+    case 'object':
+      rtrnType = schema ? `${titleCase(schema)}[]` : 'any'
+      break
+    case 'string':
+      rtrnType = schema === 'date-time' ? 'Date' : 'string'
+      break
+    case 'integer':
+      rtrnType = 'number'
+      break
+    case 'boolean':
+      rtrnType = 'boolean'
+      break
+    default:
+      rtrnType = schema ? `${titleCase(schema)}` : 'any'
+  }
+  return rtrnType
+}
+
+function capitalize(str: string) {
+  return str.charAt(0).toUpperCase() + str.substring(1, str.length).toLowerCase();
+}
+
+export function titleCase(str: string) {
+  return str.replace(/[^\ \/\-\_]+/g, capitalize)
+}

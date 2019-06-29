@@ -1,4 +1,4 @@
-import Command, { flags } from '@oclif/command';
+import { Command, flags } from '@oclif/command';
 import Chalk from 'chalk';
 import cli from 'cli-ux';
 import * as fs from 'fs';
@@ -49,7 +49,7 @@ export default class Config extends Command {
         message: 'Generated Model output location: ',
         type: 'input',
       }])
-      outputPath = responses.output || './src/swagger/model'
+      outputPath = responses.output || './src/generated'
     }
     // just prompt for input
     const pathConfirmation = await cli.prompt(`The Swagger path is: ${configPath}.${flags.format}, Are you sure to continue? (y/N)`)

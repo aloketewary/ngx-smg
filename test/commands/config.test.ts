@@ -3,15 +3,8 @@ import {expect, test} from '@oclif/test'
 describe('config', () => {
   test
     .stdout()
-    .command(['config'])
-    .it('runs hello', ctx => {
-      expect(ctx.stdout).to.contain('hello world')
-    })
-
-  test
-    .stdout()
-    .command(['config', '--name', 'jeff'])
-    .it('runs hello --name jeff', ctx => {
+    .command(['config', '--format', 'yml', 'path', 'output'])
+    .it('runs path output --format yml', ctx => {
       expect(ctx.stdout).to.contain('hello jeff')
     })
 })

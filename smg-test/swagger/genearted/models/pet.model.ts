@@ -1,11 +1,11 @@
 import { Category } from './category.model';
-import { Tag } from './tag.model';
 
+import { Tag } from './tag.model';
 export class Pet {
-    id:number;
-    category:Category;
-    name:string;
-    photoUrls:any[];
-    tags:Tag[];
-    status:string;
+id: number;
+category: Category;
+name: string;
+photoUrls: any[];
+tags: Tag[];
+status: string;
 }
