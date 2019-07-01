@@ -1,7 +1,7 @@
 {
   "name": "ngx-smg",
   "description": "Angular x Model and Service Generator from Swagger File",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Aloke Tewary",
   "bin": {
     "ngx-smg": "./bin/run"
