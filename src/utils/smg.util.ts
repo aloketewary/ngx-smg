@@ -47,7 +47,7 @@ export function getImportsType(propertyType: PropertyTypeObj): string {
 }
 
 
-export function getServiceType(propertyType: string, schema: string | undefined): string {
+export function getServiceType(propertyType: string | undefined, schema: string | undefined): string {
   // console.log(JSON.stringify(propertyType))
   let rtrnType: string
   switch (propertyType) {
@@ -76,6 +76,6 @@ function capitalize(str: string) {
   return str.charAt(0).toUpperCase() + str.substring(1, str.length).toLowerCase();
 }
 
-export function titleCase(str: string) {
-  return str.replace(/[^\ \/\-\_]+/g, capitalize)
+export function titleCase(str: string | undefined) {
+  return !isNullOrUndefined(str) ? (str as string).replace(/[^\ \/\-\_]+/g, capitalize) : ''
 }
